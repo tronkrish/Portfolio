@@ -51,6 +51,11 @@ section {
     color: var(--text-color);
 }
 
+.logo:hover{
+    cursor: pointer;
+    color: var(--bg-color);
+}
+
 .nav-list {
     display: flex;
     list-style-type: none;
@@ -192,17 +197,15 @@ section {
 }
 
 .home-img img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 430px;
     border-radius: 50%;
-    /* border: 2px solid var(--main-color); */
+    border: 2px solid gray;
     box-shadow: 0 0 20px var(--bg-color);
     /* animation: floatimage 4s ease-in-out infinite; */
-    padding: auto;
-    padding: 5px;
 }
 
-@keyframes floatimage {
+/* @keyframes floatimage {
     0% {
         transform: translateY(0);
     }
@@ -214,7 +217,7 @@ section {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 /* About Section */
 .about {
@@ -229,12 +232,13 @@ section {
 
 .about-img img {
     height: 450px;
-    width: 350px;
-    border-radius: 5px;
+    width: 370px;
+    /* border-radius: 5px; */
     padding: 10px;
     border: 2px solid var(--main-color);
-    box-shadow: 0 10px 25px var(--bg-color);
+    /* box-shadow: 0 10px 25px var(--bg-color); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.9;
 }
 
 .about-img img:hover {
